@@ -111,7 +111,7 @@ class TicTacToeGame:
             if isinstance(symbol, Symbol):
                 return symbol
 
-    def generate_paths(self) -> Generator[Iterable[tuple[int, int]], None, None]:
+    def generate_paths(self) -> Generator[list[tuple[int, int]], None, None]:
         '''
         :raise: ValueError when the game is stalemated
         :return:
@@ -120,16 +120,15 @@ class TicTacToeGame:
         size = board.board_size
 
         for i in range(size):
-            yield ((i, j) for j in range(size))
-            yield ((j, i) for j in range(size))
+            yield list((i, j) for j in range(size))
+            yield list((j, i) for j in range(size))
 
         #assuming the gameboard is square
-        yield ((i,i) for i in range(size))
-        yield ((i, (size-1)-i) for i in range(size))
+        yield list((i,i) for i in range(size))
+        yield list((i, (size-1)-i) for i in range(size))
 
     def evaluate_game_state(self) -> Symbol | None:
         for path in self.generate_paths():
-            path = list(path)
             if (v:=self.test_if_path_won(path)) is not None:
                 self.winning_path = path
                 return v
