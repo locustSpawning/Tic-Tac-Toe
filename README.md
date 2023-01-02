@@ -16,5 +16,8 @@ and stylistic descisions about the front end. The student would do things like a
 
 
 <p align="center">
-  <img src="game.png">
+  <img src="screen_shots/Title.png">
+  <img src="screen_shots/GameSettings.png">
+  <img src="screen_shots/GameScreen.png">
+  <img src="screen_shots/GameOver.png">
 </p>
