@@ -1,0 +1,15 @@
+PlayerNameEntryScreen {
+    layout: vertical;
+}
+
+PlayerNameEntryScreen Widget{
+    margin: 1;
+}
+
+
+PlayerNameButtonBox{
+    layout: horizontal;
+    padding: 0;
+    align-horizontal: center;
+
+}

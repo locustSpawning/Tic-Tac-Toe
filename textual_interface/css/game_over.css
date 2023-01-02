@@ -1,0 +1,13 @@
+GameOverScreen {
+    layout: vertical;
+}
+
+GameOverButtonBox{
+    layout: horizontal;
+    padding: 0;
+    align-horizontal: center;
+}
+#label_play_again{
+    text-align: center;
+
+}

@@ -1,0 +1,22 @@
+Button {
+    width: 16;
+    border: hkey #454b52;
+    margin: 0 5;
+}
+
+.confirm_button {
+    text-style: bold;
+    background: #698c70;
+    color: $text;
+}
+
+.cancel_button {
+    text-style: bold;
+    background: #a14c4d;
+    color: $text;
+}
+
+Header{
+    background: #454b52;
+    margin: 0 !important;
+}

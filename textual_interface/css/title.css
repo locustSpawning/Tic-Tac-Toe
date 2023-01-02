@@ -1,0 +1,17 @@
+TitleScreen {
+    layout: vertical;
+}
+
+GameStartButtonBox {
+    layout: horizontal;
+    padding: 0;
+    align-horizontal: center;
+
+}
+#welcome_text {
+    text-align: center;
+    height: 55%;
+    width: 100%;
+    content-align: center middle;
+    text-style: bold;
+}
