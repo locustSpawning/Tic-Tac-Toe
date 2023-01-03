@@ -1,5 +1,13 @@
+[project]
+dependencies = [
+    "Pyside6-Essentials",
+    "PySide6-Addons",
+    "PySide6"
+]
 [build-system]
 requires = [
-"PySide6"
+    "setuptools"
 ]
 build-backend="setuptools.build_meta"
+[tool.setuptools.package-data]
+tic_tac_toe.qt_interface = ["resources/**"]
